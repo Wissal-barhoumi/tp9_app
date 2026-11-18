@@ -11,6 +11,45 @@
         "Tunis",
         "Sousse"
       ]
+    },
+    {
+      "name": "Mjbrgrj",
+      "price": 15,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": [],
+      "id": "gPxmAF-3oqc"
+    },
+    {
+      "name": "Mjbrgrj",
+      "price": 45,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": [],
+      "id": "6cAfBLBVqnU"
+    },
+    {
+      "name": "Mjbrgrj",
+      "price": 6,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": [],
+      "id": "vhPfPLuhpX8"
+    },
+    {
+      "name": "Mjbrmm",
+      "price": 1,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": [
+        "ufyhvh"
+      ],
+      "id": "aNwCMCJC-hM"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
