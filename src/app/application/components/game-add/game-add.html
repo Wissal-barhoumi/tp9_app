@@ -50,31 +50,7 @@
 
 <h3>Liste des jeux</h3>
 <p>{{ games() | json }}</p>
-<div>
-  <h4>Points de vente</h4>
-  <button type="button" class="btn btn-sm btn-secondary"
-        (click)="onAddShop()">
-  Ajouter un point de vente
-</button>
-  @for(shop of gameForm.shops; track $index){
-    
-    <div>
-      <label>Point de vente num : {{$index+1}}</label>
-      <input type="text" [formField]="shop">
-      <button type="button" class="btn btn-sm btn-dark"
-            (click)="onDeleteShop($index)">
-      Supprimer
-    </button>
-    @if(shop().invalid() && shop().touched()){
-  @for(error of shop().errors(); track $index){
-    <div class="alert alert-info">
-      {{error.message}}
-    </div>
-  }
-}
-    </div>
-  }
-</div>
+
  <div>
             <input type="submit" class="btn btn-success" [disabled]="gameForm().invalid()" value="Ajouter">
             <button type="button" class="btn btn-warning" (click)="resetForm()">Effacer</button>

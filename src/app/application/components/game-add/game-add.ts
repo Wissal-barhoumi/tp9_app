@@ -25,7 +25,7 @@ export class GameAdd  implements OnInit{
 private gameService = inject(GameService);
 games = this.gameService.games;
 
-readonly gameForm = form(this.gameModel, (path) => {
+readonly gameForm = form(this.gameModel,(path) => {
   required(path.name, { message: "Nom obligatoire" });
 
   pattern(path.name, /^[A-Z].+$/, {
@@ -51,22 +51,12 @@ ngOnInit() {
     this.gameService.getGames().subscribe();
   }
 onSubmit() {
-    const { id, ...game } = this.gameModel();
+    const { ...game } = this.gameModel();
 
     this.gameService.addGame(game).subscribe();
+    this.resetForm()
   }
-  onAddShop() {
-  this.gameModel.update(game => ({
-    ...game,
-    shops: [...game.shops, '']
-  }));
-}
-onDeleteShop(index: number) {
-  this.gameModel.update(game => ({
-    ...game,
-    shops: game.shops.filter((shop, i) => i !== index)
-  }));
-}
+  
 resetForm() {
   this.gameModel.set({
     id: "",
@@ -78,6 +68,6 @@ resetForm() {
     shops: []
   });
 
-  this.gameForm().reset();
+ this.gameForm().reset();
 }
 }

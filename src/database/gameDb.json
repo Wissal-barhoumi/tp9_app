@@ -49,6 +49,51 @@
         "ufyhvh"
       ],
       "id": "aNwCMCJC-hM"
+    },
+    {
+      "id": "PDVi85p54PU",
+      "name": "Avhchjcb",
+      "price": 0.2,
+      "madeIn": "Tunisie",
+      "category": "Jeux de cartes",
+      "isNew": true,
+      "shops": []
+    },
+    {
+      "id": "7qbHwtf36Q8",
+      "name": "",
+      "price": 0,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": []
+    },
+    {
+      "id": "hGBNGkeBwMw",
+      "name": "Azee",
+      "price": 10,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": []
+    },
+    {
+      "id": "9p0_VNJ11hk",
+      "name": "Azz",
+      "price": 5,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": []
+    },
+    {
+      "id": "AOrF9W2m3sE",
+      "name": "AA",
+      "price": 2,
+      "madeIn": "Tunisie",
+      "category": "Puzzle",
+      "isNew": true,
+      "shops": []
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
